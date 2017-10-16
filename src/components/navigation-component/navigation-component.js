@@ -14,6 +14,7 @@ class NavigationComponent extends Component{
         this.handleForwardClick = this.handleForwardClick.bind(this);
     }
 
+    //TODO: fix race condition
     handleHomeClick(){
         //console.log('clicked Home');
         this.props.updatePage(0);

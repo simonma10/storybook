@@ -12,11 +12,16 @@ import PageState from '../../states/PageState';
 class PageComponent extends Component{
     constructor(props){
         super(props);
+
+        //
         this.game = new Phaser.Game(
-            window.innerWidth * window.devicePixelRatio,
-            window.innerHeight * window.devicePixelRatio,
+            //window.innerWidth/2 * window.devicePixelRatio*2,
+            //window.innerHeight/2 * window.devicePixelRatio*2,
+            window.innerWidth * 0.5 * window.devicePixelRatio,
+            window.innerHeight * 0.5 * window.devicePixelRatio,
             Phaser.AUTO
         );
+
         this.game.state.add('BootState', BootState);
         this.game.state.add('PreloaderState', PreloaderState);
         //this.game.state.add('MainMenuState', MainMenuState);
@@ -24,13 +29,6 @@ class PageComponent extends Component{
         this.game.state.start('BootState');
     }
 
-    componentWillMount(){
-
-    }
-
-    componentDidMount(){
-
-    }
 
     render(){
         if(this.props.status === 'ready'){
@@ -44,7 +42,10 @@ class PageComponent extends Component{
         }
 
         return(
-            <div>
+            <div className="subtitles">
+                <div className="subtitle_text">
+                    {this.props.subs[0] ? this.props.subs[0].copy : ''}
+                </div>
             </div>
         );
     }

@@ -1,4 +1,4 @@
-import RainbowText from '../prefabs/RainbowText';
+import RainbowText from './RainbowText';
 
 class GameState extends Phaser.State {
     create () {

@@ -30,7 +30,7 @@ export default function appReducer(state = initialState, action){
             return Object.assign({}, state, {
                 jsonData: data,
                 bookData: data.pages ? data.pages : 'error',
-                lastPage: data.pages.length -1 || 0
+                lastPage: data.pages.length || 0
             })
 
         case types.SET_APP_STATUS:
