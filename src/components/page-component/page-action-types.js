@@ -1,2 +1,1 @@
-export const TOGGLE_VISIBLE = 'TOGGLE_VISIBLE';
-export const TOGGLE_ENABLE = 'TOGGLE_ENABLE';
+export const LOAD_PAGE_DATA = 'LOAD_PAGE_DATA';

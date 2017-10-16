@@ -1,3 +1,60 @@
+
 body {
-    padding: 10px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #64263a
+}
+
+#backArrow {
+    z-index: 1000;
+    position: absolute;
+    left:0px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#nextArrow {
+    z-index: 1000;
+    position: absolute;
+    right:0px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#fullScreen {
+    z-index: 1000;
+    position: absolute;
+    right:10px;
+    top: 10px;
+}
+
+#homeBtn {
+    z-index: 1000;
+    position: absolute;
+    left:10px;
+    top: 10px;
+}
+/*
+#turn {
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color:white;
+    background-image:url('../assets/rotate.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    display:none;
+}*/
+
+#gameHolder {
+    position: absolute;
 }

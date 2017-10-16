@@ -1,1 +1,6 @@
-export const LOAD_PAGE_DATA = 'LOAD_PAGE_DATA';
+export const REQUEST_BOOK_DATA = 'REQUEST_BOOK_DATA';
+export const RECEIVE_BOOK_DATA = 'RECEIVE_BOOK_DATA';
+export const SET_APP_STATUS = 'SET_APP_STATUS';
+export const UPDATE_SETTING = 'UPDATE_SETTING';
+export const UPDATE_PAGE = 'UPDATE_PAGE';
+

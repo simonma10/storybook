@@ -1,15 +1,8 @@
-import * as types from './navigation-action-types';
+import * as types from './page-action-types';
 
-export function toggleVisible (navigationElement) {
-  return {
-    type: types.TOGGLE_VISIBLE,
-    payload: navigationElement
-  }
-}
-
-export function toggleEnable (navigationElement) {
-  return {
-    type: types.TOGGLE_ENABLE,
-    payload: navigationElement
-  }
+export function loadPageData (payload) {
+    return {
+        type: types.LOAD_PAGE_DATA,
+        payload: payload
+    }
 }

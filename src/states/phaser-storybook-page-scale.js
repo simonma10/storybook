@@ -35,10 +35,12 @@ export function transition () {
 
 
 
-/*function lockNav () {
+function lockNav () {
+
+
   locked = true;
 }
-*/
+
 function unlockNav () {
   locked = false;
 }

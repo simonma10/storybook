@@ -2,7 +2,7 @@
 
 
 export function playMusic () {
-  if(musicEnabled) {
+  if (musicEnabled) {
     music = this.game.add.audio('music', 0.10, true);
     music.play();
   }

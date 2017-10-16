@@ -2,22 +2,49 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { loadPageData } from './page-actions';
+import { requestBookData, receiveBookData, setAppStatus } from './app-actions';
+import { genericFetch } from '../../utils/file-loader';
+import { RECEIVE_BOOK_DATA } from './app-action-types';
 
-class PageComponent extends Component{
+import NavigationComponent from '../navigation-component/navigation-component';
+import PageComponent from '../page-component/page-component';
+
+
+class AppComponent extends Component{
   constructor(props){
     super(props);
+    this.getSuccess = this.getSuccess.bind(this);
+
   }
 
   componentWillMount(){
-    loadPageData(this.props.pageData);
+    this.props.requestBookData();
+
+    this.props.genericFetch({
+      method: 'GET',
+      dataUrl: '/static/data/config.json',
+      dataAcquiredType: RECEIVE_BOOK_DATA,
+      successCallBack: this.getSuccess,
+      failCallBack: this.getFail
+    });
+  }
+
+  getSuccess(payload) {
+    //console.log('genericFetch success', payload);
+    this.props.setAppStatus('config loaded');
+  }
+
+  getFail(error) {
+    console.log('genericFetch failure', error);
+    this.props.setAppStatus('error');
+    //alert('file I/O failure');
   }
 
   render(){
     return(
       <div>
-        Page Component
-
+        <NavigationComponent/>
+        <PageComponent/>
       </div>
   );
   }
@@ -28,19 +55,20 @@ function mapStateToProps(state){
   //  - component will auto re-render
   //  - the object in the state function will be assigned as props to the component
   return {
-    title: state.page.title,
-    asset: state.page.asset,
-    subs: state.page.subs
+    status: state.app.status
   }
 }
 
 function mapDispatchToProps(dispatch){
   return bindActionCreators({
-    loadPageData
+    genericFetch,
+    requestBookData,
+    receiveBookData,
+    setAppStatus
   }, dispatch)
 
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(PageComponent);
+export default connect(mapStateToProps, mapDispatchToProps)(AppComponent);
 
 
