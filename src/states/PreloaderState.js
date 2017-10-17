@@ -9,22 +9,20 @@ class PreloaderState extends Phaser.State {
         this.foreground = null;
 */
         this.readout = null;
-
         this.ready = false;
         this.makePreloader();
 
-        this.load.image('bg', 'static/tile-dark-red.png');
-        this.load.image('bookbase', 'static/bookbase.png');
+        let manifest = this.game.cache.getJSON('manifest');
 
-        this.load.image('toggleOn', 'static/toggleOn.png');
-        this.load.image('toggleOff', 'static/toggleOff.png');
-        this.load.image('wipe', 'static/wipe.jpg');
-
-        this.load.image('page1-BG', 'static/bg.jpg')
-
-        for(let i = 1; i <= 11; i++) {
-        this.load.image('page1-t'+i, 'static/t' + i + '.png');
+        for(let image of manifest.images) {
+            if(image.hasOwnProperty('reference') && image.hasOwnProperty('path')){
+                let imageReference = image.reference;
+                let imagePath = image.path;
+                this.load.image(imageReference, imagePath);
+            }
         }
+
+
     }
 
     render() {

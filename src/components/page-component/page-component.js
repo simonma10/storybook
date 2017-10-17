@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-
+import _ from 'lodash';
 //import { loadPageData } from './page-actions';
 
 import BootState from '../../states/BootState';
@@ -31,6 +31,9 @@ class PageComponent extends Component{
 
 
     render(){
+
+        let pageText = '';
+
         if(this.props.status === 'ready'){
 
             let pageData = {
@@ -40,11 +43,19 @@ class PageComponent extends Component{
             //console.log(this.props.title);
             this.game.state.start('PageState', true, false, pageData);
         }
+        if (this.props.bookData[this.props.currentPage]){
+            console.log(this.props.bookData[this.props.currentPage]);
+            let subtitles = this.props.bookData[this.props.currentPage].subs ? this.props.bookData[this.props.currentPage].subs : '';
+            if (_.has(subtitles[0], 'copy') ) {
+                pageText =  subtitles[0].copy ? subtitles[0].copy : '';
+            }
+        }
+
 
         return(
             <div className="subtitles">
                 <div className="subtitle_text">
-                    {this.props.subs[0] ? this.props.subs[0].copy : ''}
+                    {pageText}
                 </div>
             </div>
         );

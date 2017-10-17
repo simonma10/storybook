@@ -3,148 +3,142 @@
   },
   "pages": [
     {
-      "title":"Cover / Main menu",
+      "title":"Chapter 8 -  The Dumpling Restaurant",
       "asset":"MainMenu",
-      "subs":[]
-    },
-    {
-      "title":"Page 2 - Teacher/classroom",
-      "asset":"Page2Classroom",
       "subs":[
-        {"x":340, "y":220, "fill":"#000000", "delay":0.2, "copy":"From somewhere very deep inside\nThere comes a sound you cannot hide.\nSometimes loud, sometimes squeaky\nMaybe growling, even creaky."},
-        {"x":940, "y":220, "fill":"#000000", "delay":9, "copy":"What is the cause of such a noise\nThat brings wide grins to girls and boys?\nI have a secret to reveal\nWhich, when you hear\nWill make you squeal!"}
+        {"x":340, "y":220, "fill":"#000000", "delay":0.2, "copy":"Main Menu..."}
       ]
     },
     {
-      "title":"Page 3 - Tummy",
-      "asset":"Page3Tummy",
+      "title":"Page 1",
+      "asset":"page1",
       "subs":[
-        {"x":160, "y":200, "fill":"#000000", "delay":0.2, "copy":"In your tummy, by gosh, I swear\nSomeone awesome is hiding there.\nBorborygmus. That’s his name.\nFor all those rumbles, he’s to blame.\nIt is his job to let us know\nTo the kitchen we should go\nAnd cook ourselves something scrummy\nWhen we’ve got an empty tummy."}
+        {"x":340, "y":220, "fill":"#ffffff", "delay":0.2, "copy":"The travellers, paddled their boat up to a quiet little restaurant next to the river. Jiro counted eight red lanterns hanging above the roof."}
       ]
     },
     {
-      "title":"Page 4 - Food",
-      "asset":"Page4Food",
+      "title":"Page 2",
+      "asset":"page2",
       "subs":[
-        {"x":220, "y":200, "fill":"#000000", "delay":0.2, "copy":"When we've gobbled all our nosh\nDown the pipe with a great big splosh\nThe food lands on his little head\nAll sorts of stuff like soggy bread\nFried eggs, fish soup and mushy peas\nSour cream, beef stew and smelly cheese.\nSitting under a dump like that\nYou’d wish you’d brought a plastic hat."}
+        {"x":160, "y":200, "fill":"#ffffff", "delay":0.2, "copy":"Una, Jiro and Spot could smell delicious food being cooked and realised they were very hungry from their travels. They imagined all the different things they might eat."}
       ]
     },
     {
-      "title":"Page 5 - Mess",
-      "asset":"Page5Mess",
+      "title":"Page 3",
+      "asset":"page3",
       "subs":[
-        {"x":310, "y":50, "fill":"#FFBBBB", "delay":0.2, "copy":"But unlike us, I must confess\nBorborygmus loves the mess.\nHe’s happy as a pig in poo\nCos in your tum there’s loads to do."}
+        {"x":220, "y":200, "fill":"#ffffff", "delay":0.2, "copy":"When they entered the restaurant they were shocked! A spider chef was cooking in the kitchen, frantically moving her legs from one thing to the next."}
       ]
     },
     {
-      "title":"Page 6 - Beans",
-      "asset":"Page6Beans",
+      "title":"page4",
+      "asset":"page4",
       "subs":[
-        {"x":200, "y":100, "fill":"#FFBBBB", "delay":0.2, "copy":"Floss with spaghetti, juggle beans"},
-        {"x":900, "y":100, "fill":"#FFBBBB", "delay":3, "copy":"Block both his nostrils with sardines."},
-        {"x":980, "y":180, "fill":"#FFBBBB", "delay":5, "copy":"He really thinks his life is grand\nDown in that mushy wonderland."}
+        {"x":310, "y":50, "fill":"#FFBBBB", "delay":0.2, "copy":"'I am afraid I cannot serve you right now, darlings' said Ms. Spider 'I have a party of eight guests coming and I need to cook my finest dumplings for them'"}
       ]
     },
     {
-      "title":"Page 7 - Train",
-      "asset":"Page7Train",
+      "title":"page5",
+      "asset":"page5",
       "subs":[
-        {"x":190, "y":120, "fill":"#FFBBBB", "delay":0.2, "copy":"Once Borby’s had his play about\nHe doesn’t become a layabout.\nWhat you’ve eaten he must dispatch\nAround your body, batch by batch.\nHe loads fish on a little train\nThat choo-choos right up to your brain."},
-        {"x":900, "y":120, "fill":"#FFBBBB", "delay":12, "copy":"He fills a hosepipe full of milk \nAnd squirts it out, as smooth as silk\nAt all your shiny teeth and bones\nTo keep them strong as quarry stones."}
+        {"x":200, "y":100, "fill":"#FFBBBB", "delay":0.2, "copy":"'Let us help you', said Una as she caught a bowl that nearly hit the floor. 'That would be fabulous! I have such a long list of things to do' cried Ms. Spider."}
       ]
     },
     {
-      "title":"Page 8 - Gun",
-      "asset":"Page8Gun",
+      "title":"Page 6",
+      "asset":"page6",
       "subs":[
-        {"x":220, "y":370, "fill":"#000000", "delay":0.2, "copy":"Baked beans give Borby so much fun!\nHe pops them in a pasta gun\nTakes aim and fires them from your tum\nSo that they fly down to your bum."}
+        {"x":190, "y":120, "fill":"#FFBBBB", "delay":0.2, "copy":"Together the mice and ladybird searched for ingredients and carried them into the kitchen for Ms. Spider."}
       ]
     },
     {
-      "title":"Page 9 - Boats",
-      "asset":"Page9Boats",
+      "title":"Page 7",
+      "asset":"page7",
       "subs":[
-        {"x":200, "y":100, "fill":"#000000", "delay":0.2, "copy":"To your muscles sail porridge oats\nIn Borby’s cute banana boats."}
+        {"x":220, "y":370, "fill":"#000000", "delay":0.2, "copy":"Then, they helped her prepare the precious dumplings."}
       ]
     },
     {
-      "title":"Page 10 - Poo",
-      "asset":"Page10Poo",
+      "title":"Page 8",
+      "asset":"page8",
       "subs":[
-        {"x":70, "y":60, "fill":"#FFBBBB", "delay":0.2, "copy":"And should you struggle for a poo\nYour Borby knows just what to do.\nHe places fig bombs at the block\nAnd wires them to a ticking clock."},
-        {"x":990, "y":70, "fill":"#FFBBBB", "delay":8, "copy":"Then shortly after comes a blast\nThat sends you to the toilet fast."}
+        {"x":200, "y":100, "fill":"#000000", "delay":0.2, "copy":"They smelled delicious!"}
       ]
     },
     {
-      "title":"Page 11 - Garden",
-      "asset":"Page11Garden",
+      "title":"Page 9",
+      "asset":"page9",
       "subs":[
-        {"x":250, "y":70, "fill":"#FFBBBB", "delay":0.2, "copy":"In your gut there is a garden.\nSome might say, ‘I beg your pardon!\nA garden growing in my gut?\nDo you suppose that I’m a nut?’\nYou’re not a nut, but it is there\nAnd blooming under Borby’s care"},
-        {"x":980, "y":90, "fill":"#FFBBBB", "delay":13, "copy":"In it, he grows funky fungus.\nWhat they do is quite humongous.\nThey eat the food we can’t digest\nAnd keep us trim and at our best."}
+        {"x":70, "y":60, "fill":"#FFBBBB", "delay":0.2, "copy":"Finally, Una, Jiro and Spot helped set the table with the correct number of plates and chairs for the guests."}
+
       ]
     },
     {
-      "title":"Page 12 - Bugs",
-      "asset":"Page12Bugs",
+      "title":"Page 10",
+      "asset":"page10",
       "subs":[
-        {"kill": 18, "x":960, "y":210, "fill":"#FFBBBB", "delay":0.2, "copy":"To help him out, Borb’s got some Bugs.\nNot like spiders or slimy slugs.\nEach one is a funny critter\nGuaranteed to make you titter.\nThey chomp and smash and pulverise,\nChew up, digest and fertilise.\nCreating such a healthy mush\nThat keeps your garden green and lush."}
+        {"x":250, "y":70, "fill":"#FFBBBB", "delay":0.2, "copy":"Suddenly, the sound of crickets filled the air. The guests had arrived . Ms. Spider looked nervous. 'I hope they like my food' she said."}
       ]
     },
     {
-      "title":"Page 13 - Juice",
-      "asset":"Page13Juice",
+      "title":"Page 11",
+      "asset":"page11",
       "subs":[
-        {"x":190, "y":150, "fill":"#FFBBBB", "delay":0.2, "copy":"Should things not be hunky dory\nBorby knows the inside story.\nAre Sugar Monsters on the loose\nHiding in that sticky juice?"}
+        {"x":960, "y":210, "fill":"#FFBBBB", "delay":0.2, "copy":"The mice showed the guests to their chairs and served them drinks. The crickets were all chirping so loudly that they barely noticed the little mice."}
       ]
     },
     {
-      "title":"Page 14 - News",
-      "asset":"Page14News",
+      "title":"Page 12",
+      "asset":"page12",
       "subs":[
-        {"x":400, "y":100, "fill":"#FFBBBB", "delay":0.2, "copy":"He sends the news of any troubles\nTo your brain in blueberry bubbles"}
+        {"x":190, "y":150, "fill":"#FFBBBB", "delay":0.2, "copy":"Ms. Spider came out of the kitchen holding a large plate 'I present my famous dumplings!'"}
       ]
     },
     {
-      "title":"Page 15 - Sticky",
-      "asset":"Page15Sticky",
+      "title":"Page 13",
+      "asset":"page13",
       "subs":[
-        {"x":130, "y":80, "fill":"#FFBBBB", "delay":0.2, "copy":"Cos if your tum is full of sweets\nAnd lots of other gooey treats\nLike candy floss and chocolate cakes\nToffee puds and strawberry shakes"},
-        {"x":960, "y":70, "fill":"#FFBBBB", "delay":9, "copy":"Your wee Borby gets all sticky.\nMoving around is quite tricky.\nHe loses strength and turns pale green\nThe saddest sight you’ve ever seen.\nHe cannot play, mess or rumble\nIf you were him, you would grumble!"}
+        {"x":400, "y":100, "fill":"#FFBBBB", "delay":0.2, "copy":"'One for each of you' she said proudly."}
       ]
     },
     {
-      "title":"Page 16 - Fruit",
-      "asset":"Page16Fruit",
+      "title":"Page 14",
+      "asset":"page14",
       "subs":[
-        {"x":240, "y":150, "fill":"#FFBBBB", "delay":0.2, "copy":"Instead of sweeties, eat some fruit\nOr funny veg like red beetroot.\nThe more of these are on your plate\nThe more your Borby feels just great."}
+        {"x":130, "y":80, "fill":"#FFBBBB", "delay":0.2, "copy":"'There is one missing!' yelled out an angry cricket. The spider looked horrified. Where could it have gone?"}
       ]
     },
     {
-      "title":"Page 17 - Rumbles",
-      "asset":"Page17Rumbles",
+      "title":"Page 15",
+      "asset":"page15",
       "subs":[
-        {"x":160, "y":150, "fill":"#FFBBBB", "delay":0.2, "copy":"Should you forget to eat your food\nBorby soon gets in a mood."},
-        {"x":140, "y":270, "fill":"#FFBBBB", "delay":4, "copy":"Starting off with little mumbles\nMoving on to big fat rumbles\nHe lets loose deep groans and growls\nBubbly burbles, squeaks and howls."},
-        {"x":870, "y":530, "fill":"#FFBBBB", "delay":12.5, "copy":"To each rumble he gives a name\nFor no two rumbles are the same.\nThe Rusty Hinge, The Angry Goose\nThe Toilet Flush, The Hungry Moose."}
+        {"x":240, "y":150, "fill":"#FFBBBB", "delay":0.2, "copy":"The last dumpling arrived ever so slowly, carried carefully on Spot's back. Ms. Spider was relieved as the crickets burst into laughter. The party continued and everyone had an incredible time."}
       ]
     },
     {
-      "title":"Page 18 - Biome",
-      "asset":"Page18Biome",
+      "title":"Page 16",
+      "asset":"page16",
       "subs":[
-        {"x":510, "y":150, "fill":"#FFBBBB", "delay":0.2, "copy":"This story does not have an end\nCos Borborygmus is your friend.\nRumbledom is his domain\nWhere, with his bugs, he loves to reign."}
+        {"x":160, "y":150, "fill":"#FFBBBB", "delay":0.2, "copy":"As the guests exited the restaurant waving goodbye, the little travelers could feel their tummy's growling. 'We were working so hard we forgot to eat' moaned Una."}
       ]
     },
     {
-      "title":"Page 19 - Healthy",
-      "asset":"Page19Healthy",
+      "title":"Page 17",
+      "asset":"page17",
       "subs":[
-        {"x":750, "y":100, "fill":"#FFBBBB", "delay":0.2, "copy":"He's in there now, doing his stuff\nMaking sure there is enough\nGood food and drink to keep you well\nAnd if there's not, he soon will tell\nThe world with rumbles loud and clear..."}
+        {"x":510, "y":150, "fill":"#FFBBBB", "delay":0.2, "copy":"At that moment Ms. Spider revealed a small basket she had been hiding. It was full of her famous dumpling's'. I kept the best for you. I wanted to thank you for all your hard work'. Together they all sat down and enjoyed their delicious meal."}
       ]
     },
     {
-      "title":"Page 20 - End",
-      "asset":"Page20End",
+      "title":"Page 18",
+      "asset":"page18",
+      "subs":[
+        {"x":750, "y":100, "fill":"#FFBBBB", "delay":0.2, "copy":"When they were finished eating and sharing stories from Jiro's journal they said goodbye to the talented spider chef. They paddled their boat away, with full tummies and warm hearts."}
+      ]
+    },
+    {
+      "title":"Page 19",
+      "asset":"page19",
       "subs":[]
     }
   ]

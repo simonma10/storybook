@@ -20,7 +20,7 @@ class BootState extends Phaser.State {
         //this.stage.disableVisibilityChange = true;
 
         //  This tells the game to resize the renderer to match the game dimensions (i.e. 100% browser width / height)
-        //this.scale.scaleMode = Phaser.ScaleManager.USER_SCALE;
+        this.scale.scaleMode = Phaser.ScaleManager.USER_SCALE;
 
         this.game.stage.backgroundColor = "#f0f0c0";
 
@@ -36,6 +36,7 @@ class BootState extends Phaser.State {
 
         this.load.image('loaderBase', 'static/loaderBase.jpg');
         this.load.image('loaderForeground', 'static/loaderForeground.png');
+        this.load.json('manifest', '/static/data/manifest.json');
     }
 
     create () {

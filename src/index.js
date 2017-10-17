@@ -5,7 +5,6 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 
 import AppComponent from './components/app-component/app-component';
-//import NavigationComponent from './components/navigation-component/navigation-component';
 import rootReducer from './components/all-reducers';
 
 

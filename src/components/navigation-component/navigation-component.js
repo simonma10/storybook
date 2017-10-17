@@ -19,21 +19,21 @@ class NavigationComponent extends Component{
         //console.log('clicked Home');
         this.props.updatePage(0);
         //console.log(this.props.bookData[this.props.currentPage]);
-        this.props.loadPageData(this.props.bookData[this.props.currentPage]);
+        //this.props.loadPageData(this.props.bookData[this.props.currentPage]);
     }
 
     handleBackClick(){
         //console.log('clicked Back');
         this.props.updatePage(this.props.currentPage - 1);
         //console.log(this.props.bookData[this.props.currentPage]);
-        this.props.loadPageData(this.props.bookData[this.props.currentPage]);
+        //this.props.loadPageData(this.props.bookData[this.props.currentPage]);
     }
 
     handleForwardClick(){
         //console.log('clicked Forward');
         this.props.updatePage(this.props.currentPage + 1);
         //console.log(this.props.bookData[this.props.currentPage]);
-        this.props.loadPageData(this.props.bookData[this.props.currentPage]);
+        //this.props.loadPageData(this.props.bookData[this.props.currentPage]);
     }
 
     render(){
