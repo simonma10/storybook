@@ -13,19 +13,28 @@ class PageComponent extends Component{
     constructor(props){
         super(props);
 
-        //
-        this.game = new Phaser.Game(
-            //window.innerWidth/2 * window.devicePixelRatio*2,
-            //window.innerHeight/2 * window.devicePixelRatio*2,
+        //TODO: calculate optimum game size, based on window dimensions.
+        //===============================================================
+        // ensure scaling maintains consistent aspect ratio
+        //===============================================================
+        console.log('window width, height', window.innerWidth, window.innerHeight );
+        console.log('devicePixelRatio', window.devicePixelRatio);
+
+       /* this.game = new Phaser.Game(
             window.innerWidth * 0.5 * window.devicePixelRatio,
             window.innerHeight * 0.5 * window.devicePixelRatio,
             Phaser.AUTO
-        );
+        );*/
+
+       // For dev purposes, fix the dimensions at 800 x 450 (16:9 aspect ratio)
+       this.game = new Phaser.Game(
+           800, 450, Phaser.AUTO
+       )
 
         this.game.state.add('BootState', BootState);
         this.game.state.add('PreloaderState', PreloaderState);
         //this.game.state.add('MainMenuState', MainMenuState);
-        this.game.state.add('PageState', PageState)
+        this.game.state.add('PageState', PageState);
         this.game.state.start('BootState');
     }
 
@@ -38,7 +47,7 @@ class PageComponent extends Component{
 
             let pageData = {
                 page: this.props.currentPage,
-                title: this.props.title
+                data: this.props.bookData[this.props.currentPage]
             };
             //console.log(this.props.title);
             this.game.state.start('PageState', true, false, pageData);

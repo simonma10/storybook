@@ -13,7 +13,7 @@
       "title":"Page 1",
       "asset":"page1",
       "subs":[
-        {"x":340, "y":220, "fill":"#ffffff", "delay":0.2, "copy":"The travellers, paddled their boat up to a quiet little restaurant next to the river. Jiro counted eight red lanterns hanging above the roof."}
+        {"x":340, "y":220, "fill":"#ffffff", "delay":0.2, "copy":"The travellers paddled their boat up to a quiet little restaurant next to the river. Jiro counted eight red lanterns hanging above the roof."}
       ]
     },
     {
@@ -35,6 +35,9 @@
       "asset":"page4",
       "subs":[
         {"x":310, "y":50, "fill":"#FFBBBB", "delay":0.2, "copy":"'I am afraid I cannot serve you right now, darlings' said Ms. Spider 'I have a party of eight guests coming and I need to cook my finest dumplings for them'"}
+      ],
+      "sparkles":[
+        {"key": "key", "x":50, "y":225, "controlObject": {"total": 5, "repeat": -1, "frequency": 500}}
       ]
     },
     {

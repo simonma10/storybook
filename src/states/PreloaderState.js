@@ -15,10 +15,27 @@ class PreloaderState extends Phaser.State {
         let manifest = this.game.cache.getJSON('manifest');
 
         for(let image of manifest.images) {
-            if(image.hasOwnProperty('reference') && image.hasOwnProperty('path')){
-                let imageReference = image.reference;
+            if(image.hasOwnProperty('key') && image.hasOwnProperty('path')){
+                let imageKey = image.key;
                 let imagePath = image.path;
-                this.load.image(imageReference, imagePath);
+                this.load.image(imageKey, imagePath);
+            }
+        }
+
+        for(let spritesheet of manifest.spritesheets) {
+            if(spritesheet.hasOwnProperty('key') &&
+                spritesheet.hasOwnProperty('path') &&
+                spritesheet.hasOwnProperty('frameWidth') &&
+                spritesheet.hasOwnProperty('frameHeight') &&
+                spritesheet.hasOwnProperty('frameMax')
+            ){
+                this.load.spritesheet(
+                    spritesheet.key,
+                    spritesheet.path,
+                    spritesheet.frameWidth,
+                    spritesheet.frameHeight,
+                    spritesheet.frameMax
+                );
             }
         }
 
