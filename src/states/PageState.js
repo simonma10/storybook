@@ -39,7 +39,7 @@ class PageState extends Phaser.State {
 
         let title = this.game.add.text(70,230,this.pageData.title);
 
-        //this.sparkle.testEmit();
+        this.sparkle.testEmit();
         this.game.input.onTap.add(this.onTap, this);
     }
 

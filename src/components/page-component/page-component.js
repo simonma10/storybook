@@ -27,15 +27,13 @@ class PageComponent extends Component{
         );*/
 
        // For dev purposes, fix the dimensions at 800 x 450 (16:9 aspect ratio)
-       this.game = new Phaser.Game(
-           800, 450, Phaser.AUTO
-       )
+       /*this.game = new Phaser.Game(800, 450, Phaser.AUTO);
 
         this.game.state.add('BootState', BootState);
         this.game.state.add('PreloaderState', PreloaderState);
         //this.game.state.add('MainMenuState', MainMenuState);
         this.game.state.add('PageState', PageState);
-        this.game.state.start('BootState');
+        this.game.state.start('BootState');*/
     }
 
 
@@ -49,8 +47,8 @@ class PageComponent extends Component{
                 page: this.props.currentPage,
                 data: this.props.bookData[this.props.currentPage]
             };
-            //console.log(this.props.title);
-            this.game.state.start('PageState', true, false, pageData);
+            //this.game.state.start('PageState', true, false, pageData);
+
         }
         if (this.props.bookData[this.props.currentPage]){
             console.log(this.props.bookData[this.props.currentPage]);
@@ -62,11 +60,15 @@ class PageComponent extends Component{
 
 
         return(
-            <div className="subtitles">
-                <div className="subtitle_text">
-                    {pageText}
+            <div>
+                <iframe src="../../../animations/clouds.html" width="750px" height="420px"></iframe>
+                <div className="subtitles">
+                    <div className="subtitle_text">
+                        {pageText}
+                    </div>
                 </div>
             </div>
+
         );
     }
 }
